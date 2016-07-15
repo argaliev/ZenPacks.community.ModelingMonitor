@@ -1,0 +1,9 @@
+<objects>
+<!-- ('', 'zport', 'dmd', 'Events', 'Status', 'Modeling') -->
+<object id="/zport/dmd/Events/Status/Modeling" module="Products.ZenEvents.EventClass" class="EventClass">
+<object id="ModelTimeExpired" module="Products.ZenEvents.EventClass" class="EventClass">
+</object>
+<object id="ComponentMismatch" module="Products.ZenEvents.EventClass" class="EventClass">
+</object>
+</object>
+</objects>

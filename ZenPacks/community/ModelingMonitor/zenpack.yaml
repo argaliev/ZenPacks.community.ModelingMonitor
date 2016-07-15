@@ -1,0 +1,31 @@
+name: ZenPacks.community.ModelingMonitor
+
+zProperties:
+  zCompClassCount:
+    category: Modeling Monitor
+    type: int
+    default: 0
+  zExpiryDaysPast:
+    category: Modeling Monitor
+    type: int
+    default: 2
+  zModelingMonitorInterval:
+    category: Modeling Monitor
+    type: int
+    default: 86400
+
+device_classes:
+  /Server:
+    zProperties:
+      zDeviceTemplates:
+        - Device
+        - ModelingMonitor
+
+    templates:
+      ModelingMonitor:
+
+        datasources:
+          modeling_status:
+            type: ModelingMonitor
+            severity: 4
+            eventKey: ModelingMonitor
